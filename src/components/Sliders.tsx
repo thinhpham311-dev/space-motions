@@ -28,8 +28,29 @@ const sliders = ({ data }: sliderProps) => {
     return (
         <SlidersWrapper>
             <Swiper
-                slidesPerView={3}
+                slidesPerView={5}
                 spaceBetween={30}
+                breakpoints={{
+                    1280: {
+                        slidesPerView: 3,
+                        spaceBetween: 30
+                    },
+                    // when window width is <= 499px
+                    1024: {
+                        slidesPerView: 2,
+                        spaceBetween: 30
+                    },
+                    // when window width is <= 999px
+                    768: {
+                        slidesPerView: 2,
+                        spaceBetween: 40
+                    },
+                    // when window width is <= 999px
+                    425: {
+                        slidesPerView: 1,
+                        spaceBetween: 40
+                    }
+                }}
                 grabCursor={true}
                 navigation={{
                     prevEl: ".btn-prev",

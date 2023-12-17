@@ -5,7 +5,7 @@ const NavbarWrapper = styled.nav(() => [
     tw` py-48 text-subTitle transform duration-75 rounded-md sticky top-0 left-0 bg-white z-50`,
     css`
         .container{
-            ${tw`container mx-auto flex items-center justify-between flex-wrap`}
+            ${tw`flex items-center justify-between flex-wrap`}
             .menu{
                 ${tw`xl:flex block items-center  relative xl:w-[auto] w-full`}
                 &-toggle{

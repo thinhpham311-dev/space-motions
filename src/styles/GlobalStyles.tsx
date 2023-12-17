@@ -1,7 +1,7 @@
 'use client'
 import React from 'react'
 import { createGlobalStyle } from 'styled-components'
-import tw, { GlobalStyles as BaseStyles } from 'twin.macro'
+import tw, { GlobalStyles as BaseStyles, styled } from 'twin.macro'
 
 const CustomStyles = createGlobalStyle`
 html, body{
@@ -12,6 +12,10 @@ html, body{
 }
 main{
   ${tw`relative overflow-x-hidden`}
+}
+
+.container{
+  ${tw`container mx-auto px-3`}
 }
  
 html.has-scroll-smooth {
@@ -67,4 +71,6 @@ const GlobalStyles = () => (
   </>
 )
 
+
 export default GlobalStyles
+

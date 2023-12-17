@@ -14,9 +14,11 @@ const Carousel = ({ title, subTitle, dataCarousel }: carouselProps) => {
 
     return (
         <CarouselWrapper>
-            <div className="content">
-                <span>{subTitle}</span>
-                <h2>{title}</h2>
+            <div className="container">
+                <div className="content">
+                    <span>{subTitle}</span>
+                    <h2>{title}</h2>
+                </div>
             </div>
             <Sliders data={dataCarousel} />
         </CarouselWrapper>
