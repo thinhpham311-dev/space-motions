@@ -1,12 +1,13 @@
-import React, { useState } from 'react'
+'use client'
 import Link from 'next/link'
+import React, { useState } from 'react'
 import { IoIosMenu } from "react-icons/io";
 import { NavbarWrapper } from "./styles"
-
 import { Logo, Button } from "@/components"
 
 const Navbar = () => {
     const [open, setOpen] = useState(false)
+
     return (
         <NavbarWrapper>
             <div className="container">

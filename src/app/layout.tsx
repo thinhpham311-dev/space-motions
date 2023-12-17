@@ -2,6 +2,12 @@ import type { Metadata } from 'next'
 import localFont from 'next/font/local'
 import GlobalStyles from '@/styles/GlobalStyles'
 import StyledComponentsRegistry from '@/lib/registry'
+import LocomotiveProvider from "@/providers/LocomotiveScrollProvider"
+
+export const metadata: Metadata = {
+  title: 'Space Emotions',
+  description: '',
+}
 
 const HelveticaNeue = localFont({
   src: [
@@ -40,13 +46,6 @@ const HelveticaNeue = localFont({
   variable: '--font-helvetica-neue',
 })
 
-
-
-export const metadata: Metadata = {
-  title: 'Twin example',
-  description: '',
-}
-
 export default function RootLayout({
   children,
 }: {
@@ -56,8 +55,10 @@ export default function RootLayout({
     <html lang="en">
       <body className={HelveticaNeue.className}>
         <StyledComponentsRegistry>
-          <GlobalStyles />
-          {children}
+          <LocomotiveProvider>
+            <GlobalStyles />
+            {children}
+          </LocomotiveProvider>
         </StyledComponentsRegistry>
       </body>
     </html>

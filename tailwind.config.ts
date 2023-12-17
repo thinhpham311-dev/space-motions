@@ -76,7 +76,7 @@ export default {
         pastel: '#D1DCE5',
         light: '#FFFFFF',
         danger: '#FF4242',
-        warning: '#FFF4D4'
+        warning: '#FFF4D4',
       },
     },
   },

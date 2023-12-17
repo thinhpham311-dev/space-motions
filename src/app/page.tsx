@@ -1,10 +1,11 @@
 'use client'
-import React from 'react'
-import { Navbar } from "@/components"
+import LocomotiveProvider from "@/providers/LocomotiveScrollProvider"
+import { Carousel, Sliders } from '@/components'
+import { carouselSlider } from '@/data'
 
 const Home = () => (
   <>
-    <Navbar />
+    <Carousel dataCarousel={carouselSlider} title="The best design for your studio website" subTitle="Design concept" />
   </>
 )
 

@@ -1,15 +1,15 @@
 import tw, { styled, css, theme } from 'twin.macro'
 
-const NavbarWrapper = styled.div(() => [
+const NavbarWrapper = styled.nav(() => [
     // The common button styles added with the tw import
-    tw` px-[41px] py-[18px] text-subTitle transform duration-75 rounded-md sticky top-0 left-0`,
+    tw` py-48 text-subTitle transform duration-75 rounded-md sticky top-0 left-0 bg-white z-50`,
     css`
         .container{
             ${tw`container mx-auto flex items-center justify-between flex-wrap`}
             .menu{
                 ${tw`xl:flex block items-center  relative xl:w-[auto] w-full`}
                 &-toggle{
-                    ${tw`xl:hidden block z-50 text-black`}
+                    ${tw`xl:hidden block z-50 text-black focus:bg-transparent active:bg-transparent`}
                     &.hidden{
                         ${tw`text-white`}
                     }
