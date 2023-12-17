@@ -5,6 +5,7 @@ interface ButtonProps {
   $isSmall?: boolean
 }
 
+
 const Button = styled.button<ButtonProps>(({ $variant, $isSmall }) => [
   // The common button styles added with the tw import
   tw`  text-subTitle transform duration-75 rounded-md`,

@@ -45,7 +45,7 @@ const sliders = ({ data }: sliderProps) => {
                                 <Card>
                                     <h4 tw="text-heading4 mb-[45px]">{item.title}</h4>
                                     <p tw="text-bodyTextM mb-[32px]">{item.description}</p>
-                                    <Link tw="text-linkText text-pastel hover:text-primary transition-all duration-500 ease-in-out" href="">Experienced team</Link>
+                                    <Link tw="text-linkText text-pastel hover:text-primary hover:underline underline-offset-4 transition-all duration-500 ease-in-out" href="">Experienced team</Link>
                                 </Card>
                             </SwiperSlide>
                         )
@@ -69,7 +69,7 @@ const SlidersWrapper = styled.div(() => [
             ${tw`px-[calc((100%-1280px)/2)]`}
             .navigation{
                 ${tw`my-[40px]`}
-                button.swiper - button - disabled{
+                button.swiper-button-disabled{
                     svg{
                         path{
                             ${tw`fill-pastel`}
