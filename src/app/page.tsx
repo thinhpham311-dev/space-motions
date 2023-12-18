@@ -5,7 +5,7 @@ import { carouselSlider } from '@/data'
 
 const Home = () => (
   <>
-    <Carousel dataCarousel={carouselSlider} title="The best design for your studio website" subTitle="Design concept" />
+    <Carousel dataCarousel={carouselSlider} title={<>The best design for your <br /> studio website</>} subTitle="Design concept" />
   </>
 )
 

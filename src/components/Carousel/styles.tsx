@@ -6,10 +6,10 @@ const CarouselWrapper = styled.nav(() => [
     css`.content{
             ${tw`text-center container mx-auto`}
             span{
-                ${tw`uppercase text-caption mb-[43px] block`}
+                ${tw`uppercase text-caption text-bodyTextS xl:mb-[43px] mb-[13px] block`}
             }
             h2{
-                ${tw`text-heading2`}
+                ${tw`xl:text-heading2 text-heading3`}
             }
         }
      

@@ -5,8 +5,8 @@ import { CarouselWrapper } from "./styles"
 import { Sliders } from "@/components"
 
 interface carouselProps {
-    title?: string,
-    subTitle?: string
+    title?: string | ReactNode,
+    subTitle?: string | ReactNode
     dataCarousel?: any
 }
 

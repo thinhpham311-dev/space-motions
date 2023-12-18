@@ -38,17 +38,21 @@ const sliders = ({ data }: sliderProps) => {
                     // when window width is <= 499px
                     1024: {
                         slidesPerView: 2,
-                        spaceBetween: 30
+                        spaceBetween: 20
                     },
                     // when window width is <= 999px
                     768: {
-                        slidesPerView: 2,
-                        spaceBetween: 40
+                        slidesPerView: 1,
+                        spaceBetween: 20
                     },
                     // when window width is <= 999px
                     425: {
                         slidesPerView: 1,
-                        spaceBetween: 40
+                        spaceBetween: 10
+                    },
+                    320: {
+                        slidesPerView: 1,
+                        spaceBetween: 10
                     }
                 }}
                 grabCursor={true}
@@ -84,10 +88,10 @@ const sliders = ({ data }: sliderProps) => {
 export default sliders
 
 const SlidersWrapper = styled.div(() => [
-    tw` w-full my-[120px]`,
+    tw` w-full xl:my-[120px]  my-[50px]`,
     css`
         .slider{
-            ${tw`px-[calc((100%-1280px)/2)]`}
+            ${tw`2xl:px-[calc((100%-1300px)/2)] xl:px-[calc((100%-1100px)/2)] lg:px-[50px] md:px-[100px] px-[50px]`}
             .navigation{
                 ${tw`my-[40px]`}
                 button.swiper-button-disabled{

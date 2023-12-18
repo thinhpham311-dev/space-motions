@@ -17,6 +17,10 @@ main{
 .container{
   ${tw`container mx-auto px-3`}
 }
+
+br{
+  ${tw`xl:block hidden`}
+}
  
 html.has-scroll-smooth {
   overflow: hidden; }

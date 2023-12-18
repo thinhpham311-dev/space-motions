@@ -10,7 +10,7 @@ const LocomotiveProvider = (props: any) => {
             options={
                 {
                     smooth: true,
-                    mobile: {
+                    smartphone: {
                         smooth: true
                     },
                     tablet: {
