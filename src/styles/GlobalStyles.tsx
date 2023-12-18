@@ -52,6 +52,7 @@ html.has-scroll-dragging {
     opacity: 1; }
 
 .c-scrollbar_thumb {
+  z-index: 50;
   position: absolute;
   top: 0;
   right: 0;

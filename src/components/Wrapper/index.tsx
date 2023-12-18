@@ -1,28 +1,28 @@
 'use client'
 import Link from 'next/link'
 import React, { ReactNode } from 'react'
-import { CarouselWrapper } from "./styles"
+import { WrapperComponentStyled } from "./styles"
 import { Sliders } from "@/components"
 
-interface carouselProps {
+interface WrapperComponentProps {
     title?: string | ReactNode,
     subTitle?: string | ReactNode
-    dataCarousel?: any
+    children?: ReactNode
 }
 
-const Carousel = ({ title, subTitle, dataCarousel }: carouselProps) => {
+const WrapperComponent = ({ title, subTitle, children }: WrapperComponentProps) => {
 
     return (
-        <CarouselWrapper>
+        <WrapperComponentStyled>
             <div className="container">
                 <div className="content">
                     <span>{subTitle}</span>
                     <h2>{title}</h2>
                 </div>
             </div>
-            <Sliders data={dataCarousel} />
-        </CarouselWrapper>
+            {children}
+        </WrapperComponentStyled>
     )
 }
 
-export default Carousel
+export default WrapperComponent

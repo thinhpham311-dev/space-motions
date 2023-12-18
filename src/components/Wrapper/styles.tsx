@@ -1,8 +1,8 @@
 import tw, { styled, css, theme } from 'twin.macro'
 
-const CarouselWrapper = styled.nav(() => [
+const WrapperComponentStyled = styled.div(() => [
     // The common button styles added with the tw import
-    tw` text-subTitle transform duration-75 rounded-md sticky top-0 left-0 bg-white z-50`,
+    tw`xl:py-[100px] py-[50px] text-subTitle transform duration-75 rounded-md sticky top-0 left-0 bg-white z-50`,
     css`.content{
             ${tw`text-center container mx-auto`}
             span{
@@ -12,8 +12,7 @@ const CarouselWrapper = styled.nav(() => [
                 ${tw`xl:text-heading2 text-heading3`}
             }
         }
-     
     `
 ])
 
-export { CarouselWrapper }
+export { WrapperComponentStyled }
