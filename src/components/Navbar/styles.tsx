@@ -2,7 +2,7 @@ import tw, { styled, css, theme } from 'twin.macro'
 
 const NavbarWrapper = styled.nav(() => [
     // The common button styles added with the tw import
-    tw` xl:py-48 py-24 text-subTitle transform duration-75  sticky top-0 left-0 bg-white z-50`,
+    tw` py-24 text-subTitle transform duration-75  sticky top-0 left-0 bg-white z-50`,
     css`
         .container{
             ${tw`flex items-center justify-between flex-wrap`}
