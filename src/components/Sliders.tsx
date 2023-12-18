@@ -68,9 +68,9 @@ const sliders = ({ data }: sliderProps) => {
                         return (
                             <SwiperSlide className="slider-item">
                                 <Card>
-                                    <h4 tw="text-heading4 mb-[45px]">{item.title}</h4>
-                                    <p tw="text-bodyTextM mb-[32px]">{item.description}</p>
-                                    <Link tw="text-linkText text-pastel hover:text-primary hover:underline underline-offset-4 transition-all duration-500 ease-in-out" href="">Experienced team</Link>
+                                    <h4 tw="xl:text-heading4 text-subTitle xl:mb-[45px] mb-[20px]">{item.title}</h4>
+                                    <p tw="xl:text-bodyTextM text-bodyTextS font-thin xl:mb-[32px] mb-[20px]">{item.description}</p>
+                                    <Link tw="xl:text-linkText text-bodyTextS text-pastel hover:text-primary hover:underline underline-offset-4 transition-all duration-500 ease-in-out" href="">Experienced team</Link>
                                 </Card>
                             </SwiperSlide>
                         )
