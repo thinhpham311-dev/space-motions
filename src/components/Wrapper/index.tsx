@@ -2,23 +2,29 @@
 import Link from 'next/link'
 import React, { ReactNode } from 'react'
 import { WrapperComponentStyled } from "./styles"
-import { Sliders } from "@/components"
 
 interface WrapperComponentProps {
     title?: string | ReactNode,
     subTitle?: string | ReactNode
-    children?: ReactNode
+    link?: string
+    children?: ReactNode,
+    cutomStyles?: object | string
+    txtAlign: string,
 }
 
-const WrapperComponent = ({ title, subTitle, children }: WrapperComponentProps) => {
+const WrapperComponent = ({ title, subTitle, children, link, ...cutomStyles }: WrapperComponentProps) => {
 
     return (
-        <WrapperComponentStyled>
+        <WrapperComponentStyled {...cutomStyles}>
             <div className="container">
                 <div className="content">
-                    <span>{subTitle}</span>
-                    <h2>{title}</h2>
+                    {subTitle && <span>{subTitle}</span>}
+                    {title && <h2>{title}</h2>}
                 </div>
+                {link && <div className="connect">
+                    <Link href={link}>Experienced team</Link>
+                </div>
+                }
             </div>
             {children}
         </WrapperComponentStyled>

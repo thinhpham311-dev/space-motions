@@ -1,9 +1,23 @@
+import Link from "next/link"
+import { ReactNode } from "react"
 import tw, { styled, css, theme } from 'twin.macro'
 
 interface ButtonProps {
   $variant?: 'primary' | 'danger'
-  $isSmall?: boolean
+  $isSmall?: boolean,
+  $_href?: any,
+  children: ReactNode
 }
+
+const ButtonLink = ({ $_href, children }: ButtonProps) => (
+  <ButtonLinkStyled>
+    <Link href={$_href}>{children}</Link>
+  </ButtonLinkStyled>
+)
+
+const ButtonLinkStyled = styled.div(() => [
+  tw`xl:text-linkText text-bodyTextS text-pastel hover:text-primary hover:underline underline-offset-4 transition-all duration-500 ease-in-out`
+])
 
 
 const Button = styled.button<ButtonProps>(({ $variant, $isSmall }) => [
@@ -21,4 +35,5 @@ const Button = styled.button<ButtonProps>(({ $variant, $isSmall }) => [
 
 ])
 
-export default Button
+
+export { Button, ButtonLink }
